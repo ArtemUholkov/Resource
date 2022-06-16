@@ -1,0 +1,220 @@
+.container {
+    width: 70%;
+    margin: 0 auto;
+    max-width: 940px;
+    padding-top: 50px;
+}
+
+.blog_title {
+    color: #444444;
+    font-size: 52px;
+    line-height: 49px;
+    font-weight: 400;
+    padding-bottom: 73px;
+}
+
+.blog_sub_title {
+    color: var(--main-style-color);
+    position: relative;
+}
+
+.blog_sub_title:after {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 100%;
+    background-color: var(--main-style-color);
+    bottom: -2px;
+    left: 0;
+}
+
+.blog_content {
+    display: flex;
+    gap: 30px;
+}
+
+.blog_content_item {
+    position: relative;
+}
+
+.bike_img {
+    height: 675px;
+    width: 100%;
+}
+
+.blog_content_item_info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    max-width: 427px;
+}
+
+.blog_item_info_title {
+    font-size: 30px;
+    line-height: 38px;
+    color: #252061;
+}
+
+.blog_item_sub-text {
+    color: #969696;
+}
+
+.blog_item_writer {
+    display: flex;
+    gap: 10px;
+}
+
+.writer_img {
+    width: 40px;
+    height: 40px;
+}
+
+.blog_item_writer_info {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.writer_name {
+    font-size: 15px;
+    line-height: 23px;
+    color: #252061;
+}
+
+.writer_publish-date {
+    font-size: 13px;
+    line-height: 23px;
+    color: #252061;
+}
+
+.blog_content_gallary {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.gallery_guy {
+    height: 240px;
+    width: 100%;
+}
+
+.gallery_scale {
+    background-image: url("../img/blog/scales.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 240px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.gallery_scale_content {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 301px;
+
+}
+
+.gallery_date {
+    font-size: 12px;
+    line-height: 18px;
+    color: #929292;
+}
+
+.gallery_scale_info {
+    font-size: 18px;
+    line-height: 23px;
+    color: #252061;
+}
+
+.gallery_visit {
+    background-image: url("../img/blog/bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 240px;
+}
+
+.gallery_visit_content_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 43px 0 0 60px;
+}
+
+.gallery_visit_content_title {
+    font-size: 28px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.gallery_visit_content_sub-text {
+    line-height: 23px;
+}
+
+.gallery_visit_link {
+    color: var(--main-style-color);
+    text-decoration: none;
+}
+
+@media (max-width: 1050px) {
+    .blog_content_item_info {
+        position: relative;
+    }
+
+    .bike_img {
+        height: auto;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 910px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 700px) {
+    .blog_content {
+        flex-direction: column;
+    }
+
+    .gallery_guy {
+        height: 400px;
+    }
+
+    .gallery_scale {
+        height: 400px;
+    }
+
+    .blog_title {
+        font-size: 34px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .gallery_guy {
+        height: 300px;
+    }
+
+    .gallery_scale {
+        height: 300px;
+    }
+}
+
+@media (max-width: 430px) {
+    .gallery_guy {
+        height: 250px;
+    }
+
+    .gallery_scale {
+        height: 250px;
+    }
+}
