@@ -8,6 +8,7 @@
     gap: 55px;
     padding-top: 52px;
     padding-left: 210px;
+    padding-bottom: 56px;
     align-items: center;
 }
 
@@ -64,6 +65,56 @@ h3 {
     padding-bottom: 18px;
 }
 
-.how_photo_wrapper {}
+.how_photo_wrapper {
+    position: relative;
+}
 
-.button {}
+.writers_button {
+    position: absolute;
+    left: 185px;
+    top: 20px;
+    width: 146px;
+    height: 47px;
+    border: 0;
+    background-color: #2BCA8B;
+    color: white;
+}
+
+@media (max-width: 1220px) {
+    .how_content_wrapper {
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .how_content_wrapper {
+        padding-top: 50px;
+    }
+
+    .how {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .how_writers {
+        position: relative;
+    }
+}
+
+@media (max-width: 620px) {
+    .how_writers {
+        width: 350px;
+    }
+
+    .how_writers_content {
+        padding: 10px;
+        padding-top: 40px;
+    }
+
+    .how_content_wrapper {
+        padding-bottom: 0;
+    }
+}
