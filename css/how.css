@@ -1,0 +1,69 @@
+.how {
+    width: 100%;
+    position: relative;
+}
+
+.how_content_wrapper {
+    display: flex;
+    gap: 55px;
+    padding-top: 52px;
+    padding-left: 210px;
+    align-items: center;
+}
+
+.how_links_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 39px;
+    color: #2BCA8B;
+}
+
+.how_link {
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 23px;
+    color: #252061;
+}
+
+.how_writers {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 600px;
+    height: 305px;
+    background-image: url("../img/how/bg-image.png");
+    background-color: #252061;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    -webkit-box-shadow: 0px 7px 43px 0px rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 7px 43px 0px rgba(0, 0, 0, 0.65);
+}
+
+.how_writers_content {
+    padding: 37px 0 37px 55px;
+
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 23px;
+    color: #FFFFFF;
+    padding-bottom: 26px;
+}
+
+.sub_text {
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+    padding-bottom: 18px;
+}
+
+.how_photo_wrapper {}
+
+.button {}

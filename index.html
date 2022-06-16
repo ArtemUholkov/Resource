@@ -6,45 +6,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RESOURCE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css" />
 </head>
 
 <body>
     <header>
         <div class="container header_container">
-            <nav class="header_navigation">
-                <a href="#" class="nav_link">
-                    <img class="header_home_icon" src="img/header/home-icon.png">
-                </a>
-                <a href="#" class="nav_link">
-                    RESOURCE CENTER
-                </a>
-                <a href="#" class="nav_link">
-                    BLOG
-                </a>
-                <a href="#" class="nav_link">
-                    FEATURED
-                </a>
-                <a href="#" class="nav_link">
-                    ABOUT
-                </a>
-                <a href="#" class="nav_link">
-                    CONTACT
-                </a>
-            </nav>
-            <img src="img/header/main-logo.png" alt="" class="header_logo">
+            <div class="nav-logo_wrapper">
+                <nav class="header_navigation">
+                    <a href="#" class="nav_link_img">
+                        <img class="header_home_icon" src="img/header/home-icon.png">
+                    </a>
+                    <a href="#" class="nav_link">
+                        RESOURCE CENTER
+                    </a>
+                    <a href="#" class="nav_link">
+                        BLOG
+                    </a>
+                    <a href="#" class="nav_link">
+                        FEATURED
+                    </a>
+                    <a href="#" class="nav_link">
+                        ABOUT
+                    </a>
+                    <a href="#" class="nav_link">
+                        CONTACT
+                    </a>
+                    <div class="burger">
+                        <div class="burger_space" id="burger">
+                            <span class="stick"></span>
+                            <span class="stick"></span>
+                            <span class="stick"></span>
+                        </div>
+                    </div>
+                </nav>
+                <img src="img/header/main-logo.png" alt="" class="header_logo">
+            </div>
             <form action="#" class="search_form">
                 <div class="input_wrapper">
                     <input type="text" name="search" id="search" placeholder=" " class="header_search">
-                    <label for="" class="placeholder"><img src="img/header/search.png" alt="">Search website...</label>
+                    <label for="" class="placeholder"><img src="img/header/search.png" alt=""><span
+                            class="search_text">Search website...</span></label>
                 </div>
                 <input type="submit" value="Search" class="button header_search-button">
             </form>
         </div>
-
+        <div class="popup" id="popup">
+            <div class="popup_textblock" id="popupSlide">
+                <ul class="navbar_menu_mobile">
+                    <li><a class="nav_elem_mobile" href="#">HOME</a></li>
+                    <li><a class="nav_elem_mobile" href="#">RESOURCE CENTER</a></li>
+                    <li><a class="nav_elem_mobile" href="#">BLOG</a></li>
+                    <li><a class="nav_elem_mobile" href="#">FEATURED</a></li>
+                    <li><a class="nav_elem_mobile" href="#">ABOUT</a></li>
+                    <li><a class="nav_elem_mobile" href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
-    <section class="main-photo"></section>
-    <section class="how"></section>
+    <section class="main-photo">
+        <div class="main_photo_content_wrapper">
+            <h1>The <span class="title_accent_text">most complete</span><br>Photography resource.</h1>
+            <span class="main_text">Welcome at Template Resource. This template is packed<br> with useful features to
+                built
+                out
+                your own resource website.</span>
+            <div class="main_photo_buttons">
+                <button class="button visit_button">
+                    <div class="button_info_wrapper">
+                        <span class="button_title">Visit our Blog</span>
+                        <span class="button_sub_text">Stories, News & Info</span>
+                    </div>
+                </button>
+                <button class="button blog_button">
+                    <div class="button_info_wrapper">
+                        <span class="button_title">Resource Center</span>
+                        <span class="button_sub_text">Tips, Tricks & Tutorials</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="how">
+        <div class="how_content_wrapper">
+            <h2>How can<br>we help<br>you?</h2>
+            <div class="how_links_wrapper">
+                <a href="" class="how_link">Visit our Blog</a>
+                <a href="" class="how_link">Photographers Resources Library</a>
+                <a href="" class="how_link">Featured Stories</a>
+                <a href="" class="how_link">Get Full Access Today!</a>
+            </div>
+        </div>
+        <div class="how_writers">
+            <div class="how_writers_content">
+                <h3>Meet our Writers</h3>
+                <span class="sub_text">We've got a professional team of<br> professional photographers providing you<br>
+                    with
+                    resources.</span>
+                <div class="how_photo_wrapper">
+                    <img class="how_writers_img" src="img/how/writers.png" alt="">
+                    <button class="button">meet our team</button>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="blog"></section>
     <section class="access"></section>
     <section class="feedbacks"></section>

@@ -3,6 +3,143 @@
     height: 700px;
     background-image: url("../img/main-photo/main-photo.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.main_photo_content_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20%;
+}
+
+h1 {
+    font-size: 49px;
+    line-height: 65px;
+    font-weight: 400;
+    padding-bottom: 4px;
+}
+
+.title_accent_text {
+    position: relative;
+    text-decoration: none;
+    color: #2BCA8B;
+    font-weight: 400;
+}
+
+.title_accent_text:after {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 100%;
+    background-color: #2BCA8B;
+    bottom: -2px;
+    left: 0;
+}
+
+.main_text {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 37px;
+    color: #444444;
+    padding-bottom: 85px;
+}
+
+.main_photo_buttons {
+    display: flex;
+    gap: 15px;
+
+}
+
+.button {
+    border: 0;
+    padding: 5px 30px;
+}
+
+.visit_button {
+    background-color: #eaecf1;
+    color: #4D4D4D;
+    transition: ease 0.5s;
+}
+
+.button_info_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.button_title {
+    font-size: 23px;
+    line-height: 23px;
+}
+
+.button_sub_text {
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.blog_button {
+    background-color: #eaecf1;
+    color: #4D4D4D;
+    transition: ease 0.5s;
+}
+
+.visit_button:hover {
+    background-color: var(--main-style-color);
+    color: white;
+    cursor: pointer;
+}
+
+.blog_button:hover {
+    background-color: var(--main-style-color);
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .main_photo_content_wrapper {
+
+        padding-left: 5%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .main-photo {
+        background-position: left;
+    }
+
+    .main_photo_content_wrapper {
+        padding: 0 10px;
+        margin: 0 auto;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 34px;
+    }
+
+    .main_photo_content_wrapper {
+        justify-content: flex-start;
+        padding-top: 30px;
+    }
+
+    .main-photo {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 470px) {
+    .main_photo_buttons {
+        flex-direction: column;
+    }
+
+    .main_text {
+        padding-bottom: 80px;
+    }
 }

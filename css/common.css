@@ -118,7 +118,7 @@ table {
 
 /*COLOR VARIABLES START*/
 :root {
-    --main-style-color: #D1B06B;
+    --main-style-color: #F55F39;
 }
 
 /*COLOR VARIABLES END*/
@@ -132,6 +132,9 @@ html {
 body {
     margin: 0 auto;
     width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 /*COMMONT STYLES END*/
