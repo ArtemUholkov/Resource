@@ -54,13 +54,24 @@ searchField.addEventListener("blur", f, true);
 searchField.addEventListener("input", buttonValid);
 
 function buttonValid() {
-    if (searchField.value.length !== 0) {
+    if (searchField.value.length > 1) {
         headerButton.classList.add("colorchanger");
-        searchField.removeEventListener("blur", f);
+        // searchField.removeEventListener("blur", f);
     }
     else {
         headerButton.classList.remove("colorchanger");
     }
 }
+
+// function buttonValid() {
+//     if (searchField.value.length > 1) {
+//         headerButton.style.backgroundColor = "var(--main-style-color)";
+//         // searchField.removeEventListener("blur", f);
+//     }
+//     else {
+//         headerButton.style.backgroundColor = "#B8BDC9";
+//     }
+// }
+
 
 
