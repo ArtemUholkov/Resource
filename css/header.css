@@ -37,6 +37,9 @@ header {
 
 .input_wrapper {
     position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .placeholder {
@@ -98,7 +101,7 @@ header {
 .header_search {
     border: 1px solid #E0E0E0;
     height: 42px;
-    width: 255px;
+    width: 100%;
     padding-left: 15px;
 
 }
@@ -142,6 +145,7 @@ header {
     .header_search {
         width: 150px;
         padding-left: 10px;
+        align-self: flex-end;
     }
 
     .search_text {
@@ -150,6 +154,10 @@ header {
 
     .header_logo {
         left: 52%;
+    }
+
+    .placeholder {
+        left: 40px;
     }
 }
 
@@ -185,30 +193,42 @@ header {
     .header_logo {
         left: 35%;
     }
+
+
 }
 
-@media (max-width: 780px) {
+@media (max-width: 700px) {
     .header_logo {
         left: 20%;
     }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 580px) {
+    .header_search-button {
+        width: 0px;
+        display: none;
+        padding: 5px 0px;
+    }
+
     .header_container {
         height: auto;
     }
 
-    /* .header_search-button {
-        display: none;
-    } */
+    .search_form {
+
+        width: 100%;
+    }
+
+
+    .search_text {
+        display: block;
+    }
 
     .header_search {
         height: 42px;
-        max-width: fit-content;
         padding-left: 10px;
-        width: fit-content;
-        min-width: 30px;
         margin-bottom: 20px;
+        width: 100%;
     }
 
     .header_container {
@@ -227,6 +247,51 @@ header {
         display: flex;
         justify-content: space-between;
     }
+
+    .header_logo {
+        width: 100px;
+        height: 70px;
+    }
+
+    .placeholder {
+        left: 15px;
+    }
+
+}
+
+@keyframes slide-button {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 137px;
+    }
+}
+
+@keyframes colorchange {
+    0% {
+        background-color: #B8BDC9;
+    }
+
+    100% {
+        background-color: var(--main-style-color);
+    }
+}
+
+.show {
+    display: block;
+    animation-name: slide-button;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    width: 137px;
+}
+
+.colorchanger {
+    background-color: var(--main-style-color);
+    animation-name: colorchange;
+    animation-duration: 1s;
+    animation-timing-function: ease;
 }
 
 .popup {

@@ -32,3 +32,35 @@ function burgerHandler(e) {
     }
     burger.classList.toggle('active');
 }
+
+const headerButton = document.querySelector(".header_search-button");
+const searchField = document.querySelector(".header_search");
+
+
+
+searchField.addEventListener("focus", () => {
+    headerButton.classList.add('show');
+}, true);
+
+const f = () => {
+    if (searchField.value.length == 0) {
+        headerButton.classList.remove('show');
+    }
+}
+
+searchField.addEventListener("blur", f, true);
+
+
+searchField.addEventListener("input", buttonValid);
+
+function buttonValid() {
+    if (searchField.value.length !== 0) {
+        headerButton.classList.add("colorchanger");
+        searchField.removeEventListener("blur", f);
+    }
+    else {
+        headerButton.classList.remove("colorchanger");
+    }
+}
+
+
