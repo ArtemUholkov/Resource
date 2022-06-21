@@ -42,13 +42,12 @@ if (window.innerWidth < 581) {
         headerButton.classList.add('show');
     }, true);
 
-    const f = () => {
+
+    searchField.addEventListener("blur", () => {
         if (searchField.value.length == 0) {
             headerButton.classList.remove('show');
         }
-    }
-
-    searchField.addEventListener("blur", f, true);
+    }, true);
 }
 
 searchField.addEventListener("input", buttonValid);

@@ -40,6 +40,17 @@
 .bike_img {
     height: 675px;
     width: 100%;
+    transition: transform 2s;
+
+}
+
+.bike_img:hover {
+    transform: scale(1.2);
+    overflow: hidden;
+}
+
+.bike_wrapper {
+    overflow: hidden;
 }
 
 .blog_content_item_info {
@@ -98,20 +109,59 @@
 
 .gallery_guy {
     height: 240px;
+    max-height: 240px;
+    width: 100%;
+    transition: transform 2s;
+    object-fit: cover;
+    object-position: bottom;
+
+}
+
+.gallery_guy:hover {
+    transform: scale(1.2);
+}
+
+.boy_wrapper {
+    overflow: hidden;
+    height: 240px;
+    object-position: bottom;
+}
+
+.scale_wrapper {
+    height: 240px;
+    width: 100%;
+    position: relative;
+
+}
+
+.gallery_scale_img {
+    overflow: hidden;
+    height: 240px;
+
+}
+
+.scale_img {
+    max-height: 240px;
+    height: 240px;
+    object-fit: cover;
+    transition: transform 2s;
     width: 100%;
 }
 
-.gallery_scale {
-    background-image: url("../img/blog/scales.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 240px;
-    display: flex;
-    align-items: flex-end;
+.scale_img:hover {
+    transform: scale(1.2);
 }
 
+.scale_img_wrapper {
+    overflow: hidden;
+}
+
+
+
 .gallery_scale_content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -133,18 +183,36 @@
 }
 
 .gallery_visit {
-    background-image: url("../img/blog/bg.png");
+    /* background-image: url("../img/blog/bg.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
     height: 240px;
+    position: relative;
+    overflow: hidden;
 }
+
+.blog_bg_visit {
+    height: 240px;
+    object-fit: cover;
+    transition: transform 2s;
+    width: 100%;
+
+}
+
+.blog_bg_visit:hover {
+    transform: scale(1.2);
+}
+
 
 .gallery_visit_content_wrapper {
     display: flex;
     flex-direction: column;
     gap: 24px;
     padding: 43px 0 0 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .gallery_visit_content_title {
@@ -162,10 +230,14 @@
     text-decoration: none;
 }
 
-@media (max-width: 1050px) {
-    .blog_content_item_info {
-        position: relative;
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
     }
+}
+
+@media (max-width: 1050px) {
+
 
     .bike_img {
         height: auto;
@@ -174,13 +246,12 @@
 
 }
 
-@media (max-width: 910px) {
-    .container {
-        width: 90%;
-    }
-}
 
-@media (max-width: 700px) {
+@media (max-width: 850px) {
+    .blog_content_item_info {
+        position: relative;
+    }
+
     .blog_content {
         flex-direction: column;
     }
