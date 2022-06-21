@@ -128,5 +128,5 @@ h3 {
 
 .glowing {
     color: var(--main-style-color);
-    transition: 1s;
+    transition: .5s;
 }

@@ -70,12 +70,12 @@ function loopAll() {
     links.each(function (index) {
         a[index] = $(this);
         setTimeout(function () {
-            a[index].addClass('glowing').delay(3000).queue(function (next) {
+            a[index].addClass('glowing').delay(500).queue(function (next) {
                 a[index].removeClass('glowing');
                 next();
             });
-        }, index * 4000);
+        }, index * 600);
     });
 }
 loopAll();
-setInterval(() => { loopAll(); }, 16000);
+setInterval(() => { loopAll(); }, 30000);
