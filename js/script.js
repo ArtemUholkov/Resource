@@ -52,22 +52,11 @@ if (window.innerWidth < 581) {
 
 searchField.addEventListener("input", buttonValid);
 
-// function buttonValid() {
-//     if (searchField.value.length > 1) {
-//         headerButton.classList.add("colorchanger");
-//     }
-//     else {
-//         // setTimeout(() => {
-//         headerButton.classList.remove("colorchanger");
-//         // }, 2000);
-//     }
-// }
 
 function buttonValid() {
     if (searchField.value.length > 1) {
         headerButton.style.backgroundColor = "var(--main-style-color)";
         headerButton.disabled = false;
-        // searchField.removeEventListener("blur", f);
     }
     else {
         headerButton.style.backgroundColor = "#B8BDC9";
@@ -75,5 +64,18 @@ function buttonValid() {
     }
 }
 
-
-
+const links = $(".how_link");
+function loopAll() {
+    let a = [];
+    links.each(function (index) {
+        a[index] = $(this);
+        setTimeout(function () {
+            a[index].addClass('glowing').delay(3000).queue(function (next) {
+                a[index].removeClass('glowing');
+                next();
+            });
+        }, index * 4000);
+    });
+}
+loopAll();
+setInterval(() => { loopAll(); }, 16000);

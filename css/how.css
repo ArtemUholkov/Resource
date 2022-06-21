@@ -29,6 +29,7 @@ h2 {
     text-decoration: none;
     line-height: 23px;
     color: #252061;
+    transition: 1s;
 }
 
 .how_writers {
@@ -123,4 +124,9 @@ h3 {
     h2 {
         font-size: 18px;
     }
+}
+
+.glowing {
+    color: var(--main-style-color);
+    transition: 1s;
 }
