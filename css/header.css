@@ -2,8 +2,6 @@ header {
     width: 100%;
 }
 
-.container {}
-
 .header_container {
     margin: 0 auto;
     height: 80px;
@@ -115,6 +113,7 @@ header {
     color: #E0E0E0;
     font-size: 14px;
     line-height: 21px;
+    transition: 1s;
 }
 
 .nav_wrap {

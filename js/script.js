@@ -37,41 +37,44 @@ const headerButton = document.querySelector(".header_search-button");
 const searchField = document.querySelector(".header_search");
 
 
+if (window.innerWidth < 581) {
+    searchField.addEventListener("focus", () => {
+        headerButton.classList.add('show');
+    }, true);
 
-searchField.addEventListener("focus", () => {
-    headerButton.classList.add('show');
-}, true);
-
-const f = () => {
-    if (searchField.value.length == 0) {
-        headerButton.classList.remove('show');
+    const f = () => {
+        if (searchField.value.length == 0) {
+            headerButton.classList.remove('show');
+        }
     }
+
+    searchField.addEventListener("blur", f, true);
 }
-
-searchField.addEventListener("blur", f, true);
-
 
 searchField.addEventListener("input", buttonValid);
 
+// function buttonValid() {
+//     if (searchField.value.length > 1) {
+//         headerButton.classList.add("colorchanger");
+//     }
+//     else {
+//         // setTimeout(() => {
+//         headerButton.classList.remove("colorchanger");
+//         // }, 2000);
+//     }
+// }
+
 function buttonValid() {
     if (searchField.value.length > 1) {
-        headerButton.classList.add("colorchanger");
+        headerButton.style.backgroundColor = "var(--main-style-color)";
+        headerButton.disabled = false;
         // searchField.removeEventListener("blur", f);
     }
     else {
-        headerButton.classList.remove("colorchanger");
+        headerButton.style.backgroundColor = "#B8BDC9";
+        headerButton.disabled = true;
     }
 }
-
-// function buttonValid() {
-//     if (searchField.value.length > 1) {
-//         headerButton.style.backgroundColor = "var(--main-style-color)";
-//         // searchField.removeEventListener("blur", f);
-//     }
-//     else {
-//         headerButton.style.backgroundColor = "#B8BDC9";
-//     }
-// }
 
 
 
