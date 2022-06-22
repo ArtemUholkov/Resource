@@ -79,3 +79,26 @@ function loopAll() {
 }
 loopAll();
 setInterval(() => { loopAll(); }, 30000);
+
+new Swiper('.swiper', {
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        300: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        1050: {
+            slidesPerView: 3,
+            spaceBetween: 20
+        },
+    }
+
+});

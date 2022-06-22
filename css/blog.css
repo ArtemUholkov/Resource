@@ -5,6 +5,10 @@
     padding-top: 50px;
 }
 
+.blog_container {
+    padding-bottom: 550px;
+}
+
 .blog_title {
     color: #444444;
     font-size: 52px;
@@ -228,6 +232,10 @@
 .gallery_visit_link {
     color: var(--main-style-color);
     text-decoration: none;
+}
+
+.gallery_visit_link:hover {
+    color: orange;
 }
 
 @media (max-width: 1200px) {

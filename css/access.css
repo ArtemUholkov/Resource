@@ -1,0 +1,391 @@
+.access {
+    width: 100%;
+    background-image: url("../img/access/bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    position: relative;
+}
+
+.access_content_wrapper {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 150px;
+    padding-top: 341px;
+}
+
+.access_title {
+    font-size: 52px;
+    line-height: 49px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 400;
+    padding-bottom: 62px;
+}
+
+.access_cards_wrapper {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 70px;
+    min-width: 0px;
+    max-width: 960px;
+
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: var(--main-style-color);
+    margin: -5px;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+
+}
+
+.swiper-wrapper {
+    height: 560px;
+}
+
+/* target the active bullet */
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: var(--main-style-color);
+    opacity: 1;
+}
+
+/* target all bullets */
+.swiper-pagination-bullet {
+    background-color: orange;
+    opacity: 1;
+}
+
+.access_card {
+
+    background-color: white;
+    padding: 40px 0 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.5s;
+    max-width: 287px;
+    margin: auto;
+
+}
+
+.access_card_duration {
+    font-size: 15px;
+    line-height: 23px;
+    color: #183EB6;
+    padding-bottom: 20px;
+    transition: 0.5s;
+}
+
+.access_card_price_wrappe {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding-bottom: 36px;
+}
+
+.access_card_price {
+
+    font-size: 55px;
+    line-height: 34px;
+    color: #000000;
+}
+
+.access_card_price-dur {
+    font-size: 14px;
+    line-height: 34px;
+    color: #000000;
+}
+
+.access_card_promo {
+    display: flex;
+    gap: 15px;
+
+}
+
+.access_icon {
+    width: 15px;
+    height: 15px;
+}
+
+.access_card_promo_text {
+    font-size: 13px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.access_button {
+    width: 120px;
+    height: 47px;
+    font-size: 14px;
+    line-height: 23px;
+    background-color: #2BCA8B;
+    color: white;
+    margin: 30px 0 20px 0;
+    cursor: pointer;
+}
+
+.access_card_sub_text {
+    font-size: 11px;
+    line-height: 19px;
+    color: #9DA0AC;
+    padding-right: 40px;
+}
+
+.access_sub_info {
+    width: 90%;
+}
+
+.subb_text {
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.access_icon-text {
+    display: flex;
+    gap: 10px;
+}
+
+.access_sub_info_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.access_sub_info_content_title_text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.i_icon {
+    width: 20px;
+    height: 20px;
+}
+
+.access_sub_info_content_title {
+    font-size: 21px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.learn_more {
+    font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    width: 20%;
+    text-decoration: none;
+}
+
+.learn_more:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.access_card:hover {
+    transform: scale(1, 1.1);
+    transition: 0.5s;
+}
+
+.access_card:hover .access_button {
+    background-color: var(--main-style-color);
+    transition: .5s;
+}
+
+.access_card:hover .access_card_duration {
+    color: #2BCA8B;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+.resource_center_card {
+    position: absolute;
+    top: -450px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-image: url("../img/access/resource-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 76%;
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 660px;
+    /*???????????????????????????????*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.resource_center-content_wrapper {
+    background-color: #352F77;
+    width: 100%;
+    max-width: 530px;
+    /*???????????????????????????????????????????????????*/
+
+    /*????????????????????????????????????????????????*/
+}
+
+.resource_center-content {
+    padding: 49px 66px 63px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.resource_center-content-title {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 60px;
+    color: #FFFFFF;
+    padding-bottom: 22px;
+}
+
+.resource_center-content-sub-text {
+    font-size: 15px;
+    line-height: 23px;
+    color: #FFFFFF;
+    padding-bottom: 60px;
+}
+
+.button {}
+
+.resource_center-content-button {
+    width: 355px;
+    height: 68px;
+    display: flex;
+    background-color: #2BCA8B;
+    align-items: center;
+    gap: 25px;
+}
+
+.resource_center-content-button:hover {
+    cursor: pointer;
+    background-color: var(--main-style-color);
+    transition: 0.5s;
+}
+
+.arrow-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.resource_button-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 9px;
+}
+
+.resource_button-text-title {
+    font-size: 23px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.resource_button-text-sub-text {
+    font-size: 14px;
+    line-height: 23px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1100px) {
+    .swiper {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+
+    .resource_center_card {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1050px) {
+    .access_cards_wrapper {
+
+        width: 90%;
+        min-width: 360px;
+
+    }
+
+}
+
+@media (max-width: 640px) {
+    .resource_center_card {
+        background-image: none;
+        top: -680px;
+    }
+
+    .resource_center-content_wrapper {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 590px) {
+    .resource_center-content_wrapper {
+        margin: 0 auto;
+    }
+
+    .resource_center-content {
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+    .resource_center_card {
+        margin: 10px;
+    }
+
+    .resource_center-content-button {
+        margin: 0 auto;
+        width: auto;
+    }
+
+    .resource_center-content_wrapper {
+        width: 350px;
+    }
+
+    .resource_center-content-title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .blog_container {
+        padding-bottom: 470px;
+    }
+
+    .resource_center_card {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .resource_button-text-title {
+        font-size: 18px;
+
+    }
+
+    .resource_button-text-sub-text {
+        font-size: 10px;
+    }
+}
