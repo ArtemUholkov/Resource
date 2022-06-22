@@ -38,7 +38,7 @@
 .swiper-button-prev,
 .swiper-button-next {
     color: var(--main-style-color);
-    margin: -5px;
+
 }
 
 .swiper-slide {
@@ -323,12 +323,39 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 @media (max-width: 1050px) {
     .access_cards_wrapper {
-
-        width: 90%;
-        min-width: 360px;
-
+        width: 80%;
+        min-width: 350px;
     }
 
+    .access_card:hover {
+        transform: none;
+        transition: 0;
+    }
+
+    .access_card {
+        max-width: 550px;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .promo_content_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .access_card_sub_text {
+        padding-left: 40px;
+    }
+
+    .access_sub_info_content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .learn_more {
+        width: 100%;
+    }
 }
 
 @media (max-width: 640px) {
@@ -339,6 +366,14 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
     .resource_center-content_wrapper {
         margin: 0 auto;
+    }
+
+    .access_content_wrapper {
+        padding-top: 150px;
+    }
+
+    .access_title {
+        font-size: 30px;
     }
 }
 
@@ -372,7 +407,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     }
 
     .blog_container {
-        padding-bottom: 470px;
+        padding-bottom: 550px;
     }
 
     .resource_center_card {

@@ -297,3 +297,10 @@
         height: 250px;
     }
 }
+
+@media (max-width: 590px) {
+    .blog_container {
+        padding-bottom: 100px;
+    }
+
+}
