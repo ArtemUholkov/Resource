@@ -13,8 +13,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 150px;
-    padding-top: 341px;
+
+    padding-top: 241px;
 }
 
 .access_title {
@@ -23,13 +23,13 @@
     text-align: center;
     color: #FFFFFF;
     font-weight: 400;
-    padding-bottom: 62px;
+    padding-bottom: 10px;
 }
 
 .access_cards_wrapper {
     display: flex;
     gap: 20px;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
     min-width: 0px;
     max-width: 960px;
 
@@ -158,6 +158,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 100px;
 }
 
 .access_sub_info_content_title_text {

@@ -1,0 +1,229 @@
+.feedbacks {
+    width: 100%;
+    position: relative;
+}
+
+.feedbacks_title_wrapper {
+    background-color: white;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -65px;
+    left: 0;
+    padding-top: 50px;
+
+}
+
+.feedbacks_title {
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 30px;
+    color: #444444;
+    text-align: center;
+}
+
+/* .feedbacks_title_accent {} */
+
+.feedbacks_content {
+    display: flex;
+    padding-top: 59px;
+}
+
+.feebbacks_content_photo_wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.feedbacks_content_photo_photo {
+    height: 570px;
+    width: 100%;
+}
+
+
+
+.img_wrapper {
+    position: relative;
+    filter: drop-shadow(21px 21px 70px rgba(0, 0, 0, 0.2));
+    padding-right: 55px;
+}
+
+.feedbacks_feedback {
+    position: absolute;
+    left: -50px;
+    bottom: 0;
+    width: 256px;
+    height: 336px;
+    background-color: white;
+}
+
+.feedbacks_feedback_content {
+    padding: 30px;
+}
+
+.feedbacks_feedback_content_title {
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #524B9A;
+    padding-bottom: 22px;
+}
+
+.feedbacks_feedback_content_sub_text {
+    display: block;
+    font-size: 13px;
+    line-height: 23px;
+    color: #050505;
+    padding-bottom: 18px;
+}
+
+.feedbacks_feedback_content_name {
+    font-size: 13px;
+    line-height: 23px;
+    color: #524B9A;
+}
+
+.feebacks_button {
+    background-color: #2BCA8B;
+    width: 145px;
+    height: 47px;
+    color: white;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 35px;
+    right: 40px;
+}
+
+.feebacks_button:hover {
+    background-color: var(--main-style-color);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.feedbacks_content_kind {
+    width: 50%;
+}
+
+.feedbacks_content_kind_wrapper {
+    padding: 0 0 55px 55px;
+    max-width: 405px;
+}
+
+.feedback_kind_text_content_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 49px;
+    padding-bottom: 30px;
+}
+
+.feedback_kind_text_content_item {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.feedback_kind_text_content_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.feeback_kind_text_content_title {
+    padding-bottom: 8px;
+    font-size: 20px;
+    line-height: 25px;
+    color: #524B9A;
+}
+
+.feeback_kind_text_content_sub_text {
+    padding-bottom: 24px;
+    font-size: 15px;
+    line-height: 23px;
+    color: #363636;
+
+}
+
+.feeback_kind_text_content_link {
+    font-size: 14px;
+    line-height: 23px;
+    color: #4163AC;
+    cursor: pointer;
+}
+
+.feedbacks_arrow {
+    font-size: 35px;
+    font-weight: 300;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+.feeback_final-link {
+    font-size: 15px;
+    line-height: 23px;
+    text-transform: capitalize;
+    color: #F55F39;
+    text-decoration: none;
+}
+
+
+@media (max-width: 1200px) {
+    .feedbacks_content_kind_wrapper {
+        padding: 0 0 55px 55px;
+        max-width: 90%;
+    }
+
+    .feedbacks_feedback {
+        left: 10px;
+    }
+
+    .img_wrapper {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 860px) {
+    .feedbacks_title_wrapper {
+        width: 100%;
+    }
+
+    .feedbacks_content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .feebbacks_content_photo_wrapper {
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feedbacks_content_kind {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .img_wrapper {
+        padding-right: 10px;
+    }
+
+    .feebacks_button {
+        bottom: 15px;
+    }
+
+    .feedbacks_content_photo_photo {
+        height: 520px;
+        width: 100%;
+    }
+
+    .feedbacks_content_kind_wrapper {
+        padding-left: 15px;
+        max-width: 95%;
+    }
+}
