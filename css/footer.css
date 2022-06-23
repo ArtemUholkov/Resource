@@ -1,0 +1,128 @@
+footer {
+    background-image: url("../img/footer/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer_container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 130px 0 120px 0;
+}
+
+.footer_content-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+.footer_content_main-item {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer_icon {
+    height: 40px;
+    width: 40px;
+}
+
+.footer_content_main-item_text {
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding-right: 80px;
+}
+
+.footer_content_item {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.footer_content_item_title {
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding-bottom: 3px;
+}
+
+.footer_nav-link {
+    font-size: 14px;
+    line-height: 21px;
+    color: #ABA8CA;
+    text-decoration: none;
+}
+
+.footer_nav-link:hover {
+    color: white;
+}
+
+
+
+.footer_copy-text {
+    font-size: 12px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.footer_copy-text-accent {
+    color: #F55F39;
+}
+
+@media (max-width: 940px) {
+    .footer_content-wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .box1 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .box2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .box3 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .box4 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer_content-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .box1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .box2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .box3 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .box4 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+}
