@@ -299,7 +299,7 @@
                     <span class="resource_center-content-sub-text">Lorem ipsum dolor sit amet, consectetur adipiscing
                         elit.
                         Suspendisse varius enim in eros elementum tristique.</span>
-                    <button class="button resource_center-content-button">
+                    <button class="button resource_center-content-button" id="myBut">
                         <img src="img/access/but-arrow.png" alt="" class="arrow-icon">
                         <div class="resource_button-text">
                             <span class="resource_button-text-title">Resource Center</span>
@@ -527,7 +527,29 @@
             </div>
         </div>
     </footer>
+    <div id="myModal" class="modal">
 
+
+        <span class="close">&times;</span>
+        <div class="modal-content" id="img01">
+            <form action="" class="modal-reg-form">
+                <div class="input-container">
+                    <input tabindex="1" id="name" name="name" data-reg="\b([A-ZÀ-ÿa-z][-,a-z. ']+[ ]*)+"
+                        class="input check" type="text" placeholder=" " />
+                    <label for="name" class="placeholder1">Full name*</label>
+                </div>
+                <div class="input-container">
+                    <input tabindex="2" id="email" name="email" data-reg="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+                        class="input check" type="text" placeholder=" " />
+                    <label for="email" class="placeholder1">Email Adress*</label>
+                </div>
+                <input tabindex="6" type="submit" class="button register_button" id="button" name="button"
+                    value="Get an Appointment">
+            </form>
+        </div>
+
+        <div id="caption"></div>
+    </div>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>

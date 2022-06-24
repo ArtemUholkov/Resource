@@ -102,3 +102,31 @@ new Swiper('.swiper', {
     }
 
 });
+
+
+
+
+
+
+const modal = document.querySelector("#myModal");
+const modalBut = document.querySelector("#myBut");
+const captionText = document.querySelector("#caption");
+const closeModal = document.getElementsByClassName("close")[0];
+
+modalBut.onclick = function () {
+    modal.style.display = "block";
+}
+
+
+modal.addEventListener("click", clickCheck);
+
+function clickCheck(event) {
+    if (event.target.classList.contains("modal") == true) {
+        modal.style.display = "none";
+    }
+}
+
+
+closeModal.onclick = function () {
+    modal.style.display = "none";
+}
