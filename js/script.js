@@ -115,6 +115,7 @@ const closeModal = document.getElementsByClassName("close")[0];
 
 modalBut.onclick = function () {
     modal.style.display = "block";
+    body.style.overflow = "hidden";
 }
 
 
@@ -123,10 +124,35 @@ modal.addEventListener("click", clickCheck);
 function clickCheck(event) {
     if (event.target.classList.contains("modal") == true) {
         modal.style.display = "none";
+        body.style.overflow = "visible";
     }
 }
 
 
-closeModal.onclick = function () {
+closeModal.addEventListener("click", closeM);
+function closeM() {
     modal.style.display = "none";
+    body.style.overflow = "visible";
+}
+
+const subRegBut = document.querySelector(".register_button");
+console.log(subRegBut);
+
+const regForm = document.querySelector(".modal-reg-form");
+
+regForm.addEventListener("submit", firePop);
+function firePop(e) {
+    e.preventDefault();
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Thank you!',
+        showConfirmButton: false,
+        timer: 1500
+    })
+    // closeM();
+    setTimeout(() => {
+        regForm.submit();
+    }, 1600);
+
 }
