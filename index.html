@@ -534,16 +534,16 @@
         <div class="modal-content" id="img01">
             <form action="" class="modal-reg-form">
                 <div class="input-container">
-                    <input tabindex="1" id="name" name="name" data-reg="\b([A-ZÀ-ÿa-z][-,a-z. ']+[ ]*)+"
-                        class="input check" type="text" placeholder=" " />
+                    <input tabindex="1" id="name" name="name" class="input check" type="text" placeholder="Any name"
+                        required />
                     <label for="name" class="placeholder1">Full name*</label>
                 </div>
                 <div class="input-container">
-                    <input tabindex="2" id="email" name="email" data-reg="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
-                        class="input check" type="text" placeholder=" " />
+                    <input tabindex="2" id="email" name="email" class="input check" type="email" required
+                        placeholder="example@gg.com" />
                     <label for="email" class="placeholder1">Email Adress*</label>
                 </div>
-                <input tabindex="6" type="submit" class="button register_button" id="button" name="button"
+                <input tabindex="3" type="submit" class="register_button" id="button" name="button"
                     value="Get an Appointment">
             </form>
         </div>
