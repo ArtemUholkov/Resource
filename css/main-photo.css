@@ -30,7 +30,7 @@ h1 {
 .title_accent_text {
     position: relative;
     text-decoration: none;
-    color: #2BCA8B;
+    color: var(--secondary-style-color);
     font-weight: 400;
 }
 
@@ -39,7 +39,7 @@ h1 {
     content: '';
     height: 4px;
     width: 100%;
-    background-color: #2BCA8B;
+    background-color: var(--secondary-style-color);
     bottom: -2px;
     left: 0;
 }

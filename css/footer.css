@@ -70,7 +70,7 @@ footer {
 }
 
 .footer_copy-text-accent {
-    color: #F55F39;
+    color: var(--main-style-color);
 }
 
 @media (max-width: 940px) {

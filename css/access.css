@@ -126,7 +126,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     height: 47px;
     font-size: 14px;
     line-height: 23px;
-    background-color: #2BCA8B;
+    background-color: var(--secondary-style-color);
     color: white;
     margin: 30px 0 20px 0;
     cursor: pointer;
@@ -203,7 +203,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 .access_card:hover .access_card_duration {
-    color: #2BCA8B;
+    color: var(--secondary-style-color);
     transition: 0.5s;
 }
 
@@ -272,7 +272,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     width: 355px;
     height: 68px;
     display: flex;
-    background-color: #2BCA8B;
+    background-color: var(--secondary-style-color);
     align-items: center;
     gap: 25px;
 }

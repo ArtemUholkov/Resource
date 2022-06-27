@@ -165,7 +165,7 @@
     font-size: 15px;
     line-height: 23px;
     text-transform: capitalize;
-    color: #F55F39;
+    color: var(--main-style-color);
     text-decoration: none;
 }
 

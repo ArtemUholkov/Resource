@@ -142,5 +142,5 @@
 }
 
 .input:focus~.placeholder1 {
-    color: #2BCAB8;
+    color: var(--secondary-style-color);
 }

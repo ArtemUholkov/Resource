@@ -120,6 +120,8 @@ table {
 /*COLOR VARIABLES START*/
 :root {
     --main-style-color: #F55F39;
+    --secondary-style-color: #2BCA8B;
+    --link-bg-style-color: ;
 }
 
 /*COLOR VARIABLES END*/
