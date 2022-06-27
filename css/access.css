@@ -370,7 +370,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     }
 
     .access_content_wrapper {
-        padding-top: 150px;
+        padding-top: 50px;
     }
 
     .access_title {
@@ -407,9 +407,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         line-height: 35px;
     }
 
-    .blog_container {
-        padding-bottom: 550px;
-    }
+
 
     .resource_center_card {
         width: 350px;

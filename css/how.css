@@ -32,6 +32,10 @@ h2 {
     transition: 1s;
 }
 
+.how_link:hover {
+    color: #2BCA8B;
+}
+
 .how_writers {
     position: absolute;
     bottom: 0;

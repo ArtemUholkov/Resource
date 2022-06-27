@@ -117,6 +117,11 @@
 .resources_content_item_info_wrapper {
     display: flex;
     gap: 12px;
+    text-decoration: none;
+}
+
+.resources_content_item_info_wrapper:hover .resources_content_item_info_text {
+    color: orange;
 }
 
 .resources_icon {
@@ -135,6 +140,13 @@
     line-height: 23px;
     color: #252061;
     text-decoration: none;
+    width: 50px;
+    transition: .5s;
+}
+
+.resources_viewall_link:hover {
+    color: #2BCA8B;
+    transition: .5s;
 }
 
 @media (max-width: 1080px) {
@@ -146,6 +158,9 @@
 }
 
 @media (max-width: 914px) {
+    .resources_container {
+        padding: 50px 0;
+    }
 
     .resources_content_wrapper {
         display: flex;
