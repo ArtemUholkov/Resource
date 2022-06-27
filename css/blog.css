@@ -70,7 +70,7 @@
 .blog_item_info_title {
     font-size: 30px;
     line-height: 38px;
-    color: #252061;
+    color: var(--link-bg-style-color);
 }
 
 .blog_item_sub-text {
@@ -96,13 +96,13 @@
 .writer_name {
     font-size: 15px;
     line-height: 23px;
-    color: #252061;
+    color: var(--link-bg-style-color);
 }
 
 .writer_publish-date {
     font-size: 13px;
     line-height: 23px;
-    color: #252061;
+    color: var(--link-bg-style-color);
 }
 
 .blog_content_gallary {
@@ -183,7 +183,7 @@
 .gallery_scale_info {
     font-size: 18px;
     line-height: 23px;
-    color: #252061;
+    color: var(--link-bg-style-color);
 }
 
 .gallery_visit {

@@ -28,7 +28,7 @@ h2 {
     font-size: 14px;
     text-decoration: none;
     line-height: 23px;
-    color: #252061;
+    color: var(--link-bg-style-color);
     transition: 1s;
 }
 
