@@ -140,4 +140,43 @@ body {
     font-weight: 400;
 }
 
+.container {
+    width: 60%;
+    margin: 0 auto;
+    max-width: 940px;
+    padding-top: 50px;
+}
+
+h1 {
+    font-size: 49px;
+    line-height: 65px;
+    font-weight: 400;
+    padding-bottom: 4px;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 39px;
+    color: #2BCAB8;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 23px;
+    color: #FFFFFF;
+    padding-bottom: 26px;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 620px) {
+    h2 {
+        font-size: 18px;
+    }
+}
+
 /*COMMONT STYLES END*/
