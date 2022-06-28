@@ -178,3 +178,28 @@ function firePop(e) {
     }, 1600);
 
 }
+
+const card1 = document.querySelector("#collapseOne");
+const card2 = document.querySelector("#collapseTwo");
+const card3 = document.querySelector("#collapseThree");
+
+const closeBut = document.querySelector("#closeButton");
+console.log(closeBut);
+
+closeBut.addEventListener("click", butCloser);
+
+function butCloser(e) {
+    if (card1.classList.contains("show") && card2.classList.contains("show") && card3.classList.contains("show")) {
+        card3.classList.remove("show");
+        setTimeout(() => {
+            card2.classList.remove("show");
+
+
+        }, 100);
+        setTimeout(() => {
+            card1.classList.remove("show");
+
+
+        }, 100);
+    }
+};
