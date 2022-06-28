@@ -1,0 +1,16 @@
+body {}
+
+.search-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.search_result {
+    height: 100vh;
+    font-size: 25px;
+    padding-top: 50px;
+}
+
+.search-result-text {
+    font-size: 25px;
+}
