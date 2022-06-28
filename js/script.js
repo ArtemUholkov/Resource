@@ -52,17 +52,39 @@ if (window.innerWidth < 581) {
 
 searchField.addEventListener("input", buttonValid);
 
-
+headerButton.disabled = true;
 function buttonValid() {
+
     if (searchField.value.length > 1) {
         headerButton.style.backgroundColor = "var(--main-style-color)";
         headerButton.disabled = false;
     }
     else {
-        headerButton.style.backgroundColor = "#B8BDC9";
         headerButton.disabled = true;
+        headerButton.style.backgroundColor = "#B8BDC9";
+
     }
 }
+
+const resButton = document.querySelector(".research_search-button");
+const resSearch = document.querySelector(".resources_search");
+
+resSearch.addEventListener("input", buttonVal);
+
+resButton.disabled = true;
+function buttonVal() {
+
+    if (resSearch.value.length > 1) {
+        resButton.style.backgroundColor = "var(--main-style-color)";
+        resButton.disabled = false;
+    }
+    else {
+        resButton.disabled = true;
+        resButton.style.backgroundColor = "var(--secondary-style-color)";
+
+    }
+}
+
 
 const links = $(".how_link");
 function loopAll() {

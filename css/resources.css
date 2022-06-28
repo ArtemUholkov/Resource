@@ -74,6 +74,15 @@
     text-align: center;
 }
 
+.research_search-button:hover {
+    cursor: pointer;
+}
+
+.resources_search:focus~.resources_placeholder,
+.resources_search:not(:placeholder-shown)~.resources_placeholder {
+    display: none;
+}
+
 /* FORM */
 
 .resources_content_wrapper {
