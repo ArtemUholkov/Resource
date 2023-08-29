@@ -57,6 +57,7 @@ header {
 }
 
 
+
 .nav_link,
 .nav_link_img {
     text-decoration: none;
@@ -87,8 +88,13 @@ header {
     width: 100%;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .nav_link:hover {
-    color: var(--main-style-color)
+    color: var(--main-style-color);
+    text-decoration: none;
 }
 
 .header_home_icon {

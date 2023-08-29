@@ -72,6 +72,7 @@
     line-height: 21px;
     transition: 1s;
     text-align: center;
+    padding-left: 10px;
 }
 
 .research_search-button:hover {
@@ -137,6 +138,8 @@
     width: 18px;
     height: 18px;
 }
+
+
 
 .resources_content_item_info_text {
     font-size: 12px;

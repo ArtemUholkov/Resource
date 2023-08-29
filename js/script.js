@@ -179,28 +179,38 @@ function firePop(e) {
 
 }
 
-const card1 = document.querySelector("#collapseOne");
-const card2 = document.querySelector("#collapseTwo");
-const card3 = document.querySelector("#collapseThree");
+// const card1 = document.querySelector("#collapseOne");
+// const card2 = document.querySelector("#collapseTwo");
+// const card3 = document.querySelector("#collapseThree");
 
-const closeBut = document.querySelector("#closeButton");
-console.log(closeBut);
+// const but1 = document.querySelector("#closeButton1");
+// const but2 = document.querySelector("#closeButton2");
+// const but3 = document.querySelector("#closeButton3");
 
-closeBut.addEventListener("click", butCloser);
+// const arrow1 = document.querySelector("#arrow1");
+// const arrow2 = document.querySelector("#arrow2");
+// const arrow3 = document.querySelector("#arrow3");
 
-function butCloser(e) {
-    if (card1.classList.contains("show") && card2.classList.contains("show") && card3.classList.contains("show")) {
-        card3.classList.remove("show");
-        setTimeout(() => {
-            card2.classList.remove("show");
+// but1.addEventListener("click", arrowRotate);
+// but2.addEventListener("click", arrowRotate);
+// but3.addEventListener("click", arrowRotate);
+
+// function arrowRotate() {
+    
+// }
+// // function butCloser(e) {
+// //     if (card1.classList.contains("show") && card2.classList.contains("show") && card3.classList.contains("show")) {
+// //         card3.classList.remove("show");
+// //         setTimeout(() => {
+// //             card2.classList.remove("show");
 
 
-        }, 100);
-        setTimeout(() => {
-            card1.classList.remove("show");
+// //         }, 100);
+// //         setTimeout(() => {
+// //             card1.classList.remove("show");
 
 
-        }, 100);
-    }
-};
+// //         }, 100);
+// //     }
+// // };
 

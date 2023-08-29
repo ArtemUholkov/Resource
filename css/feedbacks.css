@@ -155,10 +155,12 @@
 }
 
 .feedbacks_arrow {
+    display: block;
     font-size: 35px;
     font-weight: 300;
     cursor: pointer;
     transform: rotate(90deg);
+
 }
 
 .feeback_final-link {
@@ -301,9 +303,7 @@
     background: transparent;
 }
 
-.btn-link {
-    transform: rotate(90deg);
-}
+
 
 .card2 {
     padding-top: 20px;

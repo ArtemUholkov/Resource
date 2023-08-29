@@ -275,6 +275,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: var(--secondary-style-color);
     align-items: center;
     gap: 25px;
+    padding-left: 20px;
 }
 
 .resource_center-content-button:hover {
@@ -396,6 +397,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     .resource_center-content-button {
         margin: 0 auto;
         width: auto;
+        gap: 10px;
+        padding-right: 10px;
     }
 
     .resource_center-content_wrapper {

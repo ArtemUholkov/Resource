@@ -302,7 +302,7 @@
                     <span class="resource_center-content-sub-text">Lorem ipsum dolor sit amet, consectetur adipiscing
                         elit.
                         Suspendisse varius enim in eros elementum tristique.</span>
-                    <button class="button resource_center-content-button" id="myBut">
+                    <button class="resource_center-content-button" id="myBut">
                         <img src="img/access/but-arrow.png" alt="" class="arrow-icon">
                         <div class="resource_button-text">
                             <span class="resource_button-text-title">Resource Center</span>
@@ -392,13 +392,14 @@
 
                                         </div>
                                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
-                                            id="closeButton">
-                                            <span class="feedbacks_arrow">></span>
+                                            id="closeButton1">
+                                            <span class="feedbacks_arrow" id="arrow1">></span>
                                         </button>
                                     </h5>
                                 </div>
 
-                                <div id="collapseOne" class="collapse">
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordion">
                                     <div class="card-body">
                                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
                                         richardson ad squid. 3 wolf
@@ -429,13 +430,14 @@
 
                                         </div>
                                         <button class="btn btn-link collapsed" data-toggle="collapse"
-                                            data-target="#collapseTwo" aria-expanded="false"
-                                            aria-controls="collapseTwo">
-                                            <span class="feedbacks_arrow">></span>
+                                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                                            id="closeButton2">
+                                            <span class="feedbacks_arrow" id="arrow2">></span>
                                         </button>
                                     </h5>
                                 </div>
-                                <div id="collapseTwo" class="collapse">
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordion">
                                     <div class="card-body">
                                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
                                         richardson ad squid. 3 wolf
@@ -467,12 +469,13 @@
                                         </div>
                                         <button class="btn btn-link collapsed" data-toggle="collapse"
                                             data-target="#collapseThree" aria-expanded="false"
-                                            aria-controls="collapseThree">
-                                            <span class="feedbacks_arrow">></span>
+                                            aria-controls="collapseThree" id="closeButton3">
+                                            <span class="feedbacks_arrow" id="arrow3">></span>
                                         </button>
                                     </h5>
                                 </div>
-                                <div id="collapseThree" class="collapse">
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordion">
                                     <div class="card-body">
                                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
                                         richardson ad squid. 3 wolf
